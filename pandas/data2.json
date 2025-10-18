@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Aarav",
+    "age": 20,
+    "branch": "ECE",
+    "marks": {"math": 85, "physics": 78, "coding": 92},
+    "attendance": 88.5
+  },
+  {
+    "name": "Diya",
+    "age": 21,
+    "branch": "CSE",
+    "marks": {"math": 90, "physics": 82, "coding": 95},
+    "attendance": 94.2
+  },
+  {
+    "name": "Kabir",
+    "age": 19,
+    "branch": "MECH",
+    "marks": {"math": 76, "physics": 69, "coding": 80},
+    "attendance": 75.0
+  },
+  {
+    "name": "Sana",
+    "age": 20,
+    "branch": "EEE",
+    "marks": {"math": 88, "physics": 91, "coding": 89},
+    "attendance": 90.1
+  }
+]
