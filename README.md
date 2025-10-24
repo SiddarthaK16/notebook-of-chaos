@@ -11,7 +11,9 @@ Python snippets & small functions – quick utilities I keep discovering
 
 Learning exercises – mini-challenges and practice code
 
-(Future additions: Pandas, Matplotlib, scikit-learn, etc.)
+Pandas drills & experiments – cleaning , transformin , preprocessing data
+
+(Future additions: Matplotlib, scikit-learn, etc.)
 
 ⚡ How I Use This Repo
 
