@@ -29,5 +29,7 @@ Python 3.x
 
 NumPy
 
-(Soon: Pandas, Matplotlib, scikit-learn, maybe TensorFlow)
+Pandas
+
+(Soon: Matplotlib, scikit-learn, maybe TensorFlow)
 
