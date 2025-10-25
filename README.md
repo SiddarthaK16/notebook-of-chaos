@@ -11,7 +11,7 @@ Python snippets & small functions – quick utilities I keep discovering
 
 Learning exercises – mini-challenges and practice code
 
-Pandas drills & experiments – cleaning , transformin , preprocessing data
+Pandas drills & experiments – cleaning , transforming , preprocessing data and goofing around with data
 
 (Future additions: Matplotlib, scikit-learn, etc.)
 
