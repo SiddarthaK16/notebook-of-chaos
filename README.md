@@ -13,7 +13,9 @@ Learning exercises – mini-challenges and practice code
 
 Pandas drills & experiments – cleaning , transforming , preprocessing data and goofing around with data
 
-(Future additions: Matplotlib, scikit-learn, etc.)
+Matplotlib and seaborn - tables are boring, making em interesting
+
+(Future additions: scikit-learn, etc.)
 
 ⚡ How I Use This Repo
 
@@ -31,5 +33,9 @@ NumPy
 
 Pandas
 
-(Soon: Matplotlib, scikit-learn, maybe TensorFlow)
+Matplotlib
+
+Seaborn
+
+(Soon:  scikit-learn, maybe TensorFlow)
 
