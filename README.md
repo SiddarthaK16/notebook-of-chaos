@@ -15,6 +15,8 @@ Pandas drills & experiments – cleaning , transforming , preprocessing data and
 
 Matplotlib and seaborn - tables are boring, making em interesting
 
+Webscraping - using requests module and BeautifulSoup
+
 (Future additions: scikit-learn, etc.)
 
 ⚡ How I Use This Repo
@@ -36,6 +38,8 @@ Pandas
 Matplotlib
 
 Seaborn
+
+Requests module and BeatuifulSoup
 
 (Soon:  scikit-learn, maybe TensorFlow)
 
