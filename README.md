@@ -17,7 +17,9 @@ Matplotlib and seaborn - tables are boring, making em interesting
 
 Webscraping - using requests module and BeautifulSoup
 
-(Future additions: scikit-learn, etc.)
+Model training and testing - using scikit-learn
+
+
 
 ⚡ How I Use This Repo
 
@@ -41,5 +43,9 @@ Seaborn
 
 Requests module and BeatuifulSoup
 
-(Soon:  scikit-learn, maybe TensorFlow)
+ Scikit-learn
+
+ MYSQL
+
+(Soon:  maybe TensorFlow)
 
