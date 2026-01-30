@@ -1,0 +1,63 @@
+
+-- Why Use Indexes?
+-- Speed up queries that search, filter, or sort data.
+-- Improve performance for frequent lookups or joins.
+-- Enhance scalability of your database over time.
+
+-- 1️⃣ Drop table if it already exists
+DROP TABLE IF EXISTS big_users;
+
+-- 1️⃣ Clean slate
+DROP TABLE IF EXISTS big_users;
+
+-- 2️⃣ Create table
+CREATE TABLE big_users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50),
+    email VARCHAR(100),
+    age INT,
+    city VARCHAR(50)
+);
+
+-- 3️⃣ Insert 1,000,000 rows using numbers generator (FAST & SAFE)
+INSERT INTO big_users (username, email, age, city)
+SELECT
+    CONCAT('user_', n),
+    CONCAT('user_', n, '@mail.com'),
+    FLOOR(18 + RAND() * 40),
+    CONCAT('city_', n % 100)
+FROM (
+    SELECT
+        a.n
+        + b.n * 10
+        + c.n * 100
+        + d.n * 1000
+        + e.n * 10000
+        + f.n * 100000
+        + 1 AS n
+    FROM
+        (SELECT 0 n UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4
+         UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7 UNION ALL SELECT 8 UNION ALL SELECT 9) a
+    CROSS JOIN
+        (SELECT 0 n UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4
+         UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7 UNION ALL SELECT 8 UNION ALL SELECT 9) b
+    CROSS JOIN
+        (SELECT 0 n UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4
+         UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7 UNION ALL SELECT 8 UNION ALL SELECT 9) c
+    CROSS JOIN
+        (SELECT 0 n UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4
+         UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7 UNION ALL SELECT 8 UNION ALL SELECT 9) d
+    CROSS JOIN
+        (SELECT 0 n UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4
+         UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7 UNION ALL SELECT 8 UNION ALL SELECT 9) e
+    CROSS JOIN
+        (SELECT 0 n UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4
+         UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7 UNION ALL SELECT 8 UNION ALL SELECT 9) f
+) numbers
+WHERE n <= 1000000;
+
+-- SELECT * FROM big_users WHERE age=25 ;
+CREATE INDEX idx_age ON big_users(age);
+SELECT * FROM big_users WHERE age=25 ;
+
+DROP INDEX idx_age ON big_users ;
